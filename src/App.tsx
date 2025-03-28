@@ -162,52 +162,83 @@ function App() {
     {/* Event Name in Navbar */}
     <span className="text-pink-500 font-bold text-2xl sm:text-3xl">AURENZA '25</span>
 
-    {/* Navigation Links */}
-    <div className="flex flex-wrap justify-center gap-5 sm:gap-10">
-      <a href="#home" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Home</a>
-      <a href="#events" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Events</a>
-      <a href="#team" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Team</a>
-      <a href="#gallery" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Gallery</a>
-      <a href="#contact" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Contact</a>
+    {/* Hamburger Icon for Mobile */}
+    <div className="sm:hidden">
+      <input type="checkbox" id="menu-toggle" className="hidden" />
+      <label htmlFor="menu-toggle" className="text-gray-300 cursor-pointer">
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </label>
     </div>
 
+    {/* Navigation Links */}
+    <div className="flex-col sm:flex-row sm:flex sm:items-center space-y-3 sm:space-y-0">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:gap-10">
+        <a href="#home" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Home</a>
+        <a href="#events" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Events</a>
+        <a href="#team" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Team</a>
+        <a href="#gallery" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Gallery</a>
+        <a href="#contact" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Contact</a>
+      </div>
+    </div>
   </div>
+
+  {/* Mobile Menu */}
+  <div className="sm:hidden">
+    <div className="flex flex-col items-center mt-3">
+      <div className="hidden" id="menu">
+        <a href="#home" className="text-base text-gray-300 hover:text-pink-500 transition duration-300">Home</a>
+        <a href="#events" className="text-base text-gray-300 hover:text-pink-500 transition duration-300">Events</a>
+        <a href="#team" className="text-base text-gray-300 hover:text-pink-500 transition duration-300">Team</a>
+        <a href="#gallery" className="text-base text-gray-300 hover:text-pink-500 transition duration-300">Gallery</a>
+        <a href="#contact" className="text-base text-gray-300 hover:text-pink-500 transition duration-300">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    {`
+      #menu-toggle:checked + label + #menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    `}
+  </style>
 </nav>
 
-
-      {/* Responsive Hero Section */}
       <section id="home" className="pt-28 pb-16 px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="flex flex-col items-center space-y-6">
-            {/* Logo and Title */}
-            <div className="flex flex-col items-center justify-center gap-2">
-              {/* Logos and Title */}
-              <div className="flex items-center justify-between w-full max-w-4xl">
-                {/* Left Logo - KEC */}
-                <img 
-                  src="https://res.cloudinary.com/dyxu6ylng/image/upload/v1743005236/KEC_LOGO_2_xixhut.png" 
-                  alt="KEC Logo" 
-                  className="w-24 sm:w-32"
-                />
+  <div className="max-w-4xl mx-auto text-center">
+    <div className="flex flex-col items-center space-y-6">
+      {/* Logos and Title */}
+      <div className="flex flex-col sm:flex-row items-center justify-center w-full max-w-4xl gap-4 sm:gap-8">
+        {/* Left Logo - KEC */}
+        <img 
+          src="https://res.cloudinary.com/dyxu6ylng/image/upload/v1743005236/KEC_LOGO_2_xixhut.png" 
+          alt="KEC Logo" 
+          className="w-20 sm:w-24 md:w-32"
+        />
 
-                {/* Main Title */}
-                <div className="text-center">
-                  <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-glow leading-tight">
-                    KONGU ENGINEERING
-                  </h1>
-                  <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-glow -mt-2">
-                    COLLEGE
-                  </h1>
-                </div>
+        {/* Main Title */}
+        <div className="text-center">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-glow leading-tight">
+            KONGU ENGINEERING
+          </h1>
+          <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold text-glow -mt-2">
+            COLLEGE
+          </h1>
+        </div>
 
-                {/* Right Logo - RRC */}
-                <img 
-                  src="https://res.cloudinary.com/dyxu6ylng/image/upload/v1743005241/RRC_LOGO_processed_knahyv.png" 
-                  alt="RRC Logo" 
-                  className="w-24 sm:w-32"
-                />
-              </div>
-            </div>
+        {/* Right Logo - RRC */}
+        <img 
+          src="https://res.cloudinary.com/dyxu6ylng/image/upload/v1743005241/RRC_LOGO_processed_knahyv.png" 
+          alt="RRC Logo" 
+          className="w-20 sm:w-24 md:w-32"
+        />
+      
+    </div>
+
 
             {/* Subtitle */}
             <h2 className="text-2xl sm:text-3xl font-light text-pink-500">
