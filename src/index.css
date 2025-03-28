@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-white font-['Inter'];
+  }
+}
+
+@layer components {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(236, 72, 153, 0.5),
+                 0 0 20px rgba(236, 72, 153, 0.3),
+                 0 0 30px rgba(236, 72, 153, 0.2);
+  }
+}
+
+/* Stars Animation */
+.stars-container {
+  @apply fixed inset-0 z-0 pointer-events-none overflow-hidden;
+}
+
+.star {
+  @apply absolute w-[2px] h-[2px] bg-white rounded-full;
+  animation: twinkle var(--duration, 2s) infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Gallery Auto-scroll */
+.gallery-scroll {
+  @apply flex gap-4;
+  @apply animate-scroll;
+}
+
+.gallery-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Team Cards */
+.team-card {
+  @apply bg-black/50 rounded-lg p-6 border border-pink-500/20 backdrop-blur-sm
+         transition duration-300 hover:border-pink-500/50;
+}
+
+.team-image {
+  @apply w-24 h-24 rounded-full object-cover mx-auto mb-4 
+         border-2 border-pink-500/50;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(236, 72, 153, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(236, 72, 153, 0.7);
+}
