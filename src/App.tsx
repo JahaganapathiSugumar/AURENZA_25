@@ -157,57 +157,21 @@ function App() {
     <>
       {/* Responsive Navigation */}
 <nav className="fixed top-0 w-full z-50 bg-black/90 px-4 sm:px-6 py-5">
-  <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
-    
-    {/* Event Name in Navbar */}
-    <span className="text-pink-500 font-bold text-2xl sm:text-3xl">AURENZA '25</span>
+    <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
 
-    {/* Hamburger Icon for Mobile */}
-    <div className="sm:hidden">
-      <input type="checkbox" id="menu-toggle" className="hidden" />
-      <label htmlFor="menu-toggle" className="text-gray-300 cursor-pointer">
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </label>
+        {/* Event Name in Navbar */}
+        <span className="text-pink-500 font-bold text-2xl sm:text-3xl">AURENZA '25</span>
+
+        {/* Navigation Links */}
+        <div className="flex sm:flex-row space-x-5">
+            <a href="#home" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Home</a>
+            <a href="#events" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Events</a>
+            <a href="#team" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Team</a>
+            <a href="#gallery" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Gallery</a>
+            <a href="#contact" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Contact</a>
+        </div>
     </div>
-
-    {/* Navigation Links */}
-    <div className="flex-col sm:flex-row sm:flex sm:items-center space-y-3 sm:space-y-0">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:gap-10">
-        <a href="#home" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Home</a>
-        <a href="#events" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Events</a>
-        <a href="#team" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Team</a>
-        <a href="#gallery" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Gallery</a>
-        <a href="#contact" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Contact</a>
-      </div>
-    </div>
-  </div>
-
-  {/* Mobile Menu */}
-  <div className="sm:hidden">
-    <div className="flex flex-col items-center mt-3">
-      <div className="hidden" id="menu">
-        <a href="#home" className="text-base text-gray-300 hover:text-pink-500 transition duration-300">Home</a>
-        <a href="#events" className="text-base text-gray-300 hover:text-pink-500 transition duration-300">Events</a>
-        <a href="#team" className="text-base text-gray-300 hover:text-pink-500 transition duration-300">Team</a>
-        <a href="#gallery" className="text-base text-gray-300 hover:text-pink-500 transition duration-300">Gallery</a>
-        <a href="#contact" className="text-base text-gray-300 hover:text-pink-500 transition duration-300">Contact</a>
-      </div>
-    </div>
-  </div>
-
-  <style>
-    {`
-      #menu-toggle:checked + label + #menu {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-    `}
-  </style>
 </nav>
-
       <section id="home" className="pt-28 pb-16 px-4 sm:px-6">
   <div className="max-w-4xl mx-auto text-center">
     <div className="flex flex-col items-center space-y-6">
