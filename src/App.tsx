@@ -169,7 +169,7 @@ function App() {
             <a href="#team" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Team</a>
             <a href="#gallery" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Gallery</a>
             <a href="#contact" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Contact</a>
-        </div>444
+        </div>
     </div>
 </nav>
       <section id="home" className="pt-28 pb-16 px-4 sm:px-6">
