@@ -134,7 +134,7 @@ function App() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      const eventDate = new Date("April 12, 2025 09:00:00").getTime();
+      const eventDate = new Date("April 11, 2025 09:00:00").getTime();
       const now = new Date().getTime();
       const distance = eventDate - now;
 
@@ -169,7 +169,7 @@ function App() {
             <a href="#team" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Team</a>
             <a href="#gallery" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Gallery</a>
             <a href="#contact" className="text-base sm:text-lg text-gray-300 hover:text-pink-500 transition duration-300">Contact</a>
-        </div>
+        </div>444
     </div>
 </nav>
       <section id="home" className="pt-28 pb-16 px-4 sm:px-6">
@@ -236,7 +236,7 @@ function App() {
 
   <div className="mt-8 flex items-center text-lg text-gray-400">
     <Calendar className="w-5 h-5 text-pink-500 mr-2" />
-    <span>April 12, 2025</span>
+    <span>April 11, 2025</span>
     <Timer className="w-5 h-5 text-pink-500 ml-6 mr-2" />
     <span>9:00 AM</span>
   </div>
