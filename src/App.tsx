@@ -18,7 +18,7 @@ function App() {
       team: "2-3 members per team",
       rules: [
         "Teams can present a paper on any technical, medical or a topic of their choice",
-        "Abstract should be submitted. Also the PPT registration should be available at help desk",
+        "The PPT registration will be available at help desk",
         "A maximum of 15 slides and a minimum of 10 slides should be presented",
         "The team will get 5 minutes to present their paper, followed by a 2-minute query session",
         "No internet access will be provided during presentation"
