@@ -134,7 +134,7 @@ function App() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      const eventDate = new Date("April 11, 2025 09:00:00").getTime();
+      const eventDate = new Date("April 26, 2025 09:00:00").getTime();
       const now = new Date().getTime();
       const distance = eventDate - now;
 
