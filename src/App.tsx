@@ -236,7 +236,7 @@ function App() {
 
   <div className="mt-8 flex items-center text-lg text-gray-400">
     <Calendar className="w-5 h-5 text-pink-500 mr-2" />
-    <span>April 11, 2025</span>
+    <span>April 26, 2025</span>
     <Timer className="w-5 h-5 text-pink-500 ml-6 mr-2" />
     <span>9:00 AM</span>
   </div>
